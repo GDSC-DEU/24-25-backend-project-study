@@ -37,3 +37,15 @@ HTTPBin 프로젝트를 Import 해올 겁니다.
 각자의 OS에 맞춰 링크를 눌러 주시기 바랍니다!
 - [MacOS](./tasks/macos/README.md)
 - [Windows](./tasks/windows/README.md)
+
+## IDE 설치
+IDE 설치는 **문서로 남기기에는 까다롭고 고려해야 할 부분이 많은 관계로** 직접 검색 후 설치/막히는 부분은 스터디장에게 물어보는 방식으로 진행하시기 바랍니다!
+- IntelliJ(Java/Kotlin)
+- Visual Studio Code(대부분의 언어 호환)
+- Pycharm(Python)
+
+## 프로젝트 세팅
+각자 희망하는 프로젝트에 맞춰 링크를 눌러 주시기 바랍니다!
+- [Python - FastAPI](./tasks/project_configuration/fastapi/README.md)
+- [Java - SpringBoot](./tasks/project_configuration/springboot/README.md)
+- [Node.js - Express](./tasks/project_configuration/express/README.md)

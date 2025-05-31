@@ -16,7 +16,15 @@
     - "Default behavior of 'git pull'": "Default" 선택
     - 나머지 옵션은 기본값 유지
 
-#### 방법 2: Chocolatey 사용
+#### 방법 2: Winget 사용(추천)
+1. PowerShelld을 관리자 원한으로 실행합니다.
+1. 다음과 같은 명령어를 입력합니다(Winget은 통상적으로 일반 Window 버전에 포함되어 있습니다):
+    ```powershell
+    winget instll Git.Git
+    ```
+1. 설치 프로그램이 실행되면, 1의 설치 절차와 똑같이 수행합니다(별다른 창이 생성되지 않으면 건너뛰어도 괜찮습니다).
+
+#### 방법 3: Chocolatey 사용
 
 1. PowerShell을 관리자 권한으로 실행합니다.
 1. Chocolatey가 설치되어 있지 않다면, 다음 명령어로 설치합니다:
@@ -77,3 +85,5 @@ Windows에서의 Docker는 굉장히 까다롭고 어려운 설치를 자랑합�
 
 
 만일 위 설치 과정에서 오류가 발생하였을 경우, 스터디장에게 물어보시기 바랍니다!
+
+위 작업이 전부 완료되셨다면, 다시 [원래 문서](../../tasks.md#os)로 돌아갑시다!
