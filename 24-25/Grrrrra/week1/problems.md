@@ -4,9 +4,9 @@
 > API를 작성할 때는 `[메소드] URL` 형식으로 작성해 주세요!
 
 - 모든 상품 목록을 조회하는 API : `GET/products`
-- 특정 카테고리(id: {category_id})의 상품 목록을 조회하는 API : `GET/category-products/123`
+- 특정 카테고리(id: {category_id})의 상품 목록을 조회하는 API : `GET /category/123/products`
 - id가 {product_id}인 상품의 상세 정보를 조회하는 API : `GET/products/123`
-- 새로운 상품을 등록하는 API (관리자용) :`POST/products/123/`
+- 새로운 상품을 등록하는 API (관리자용) :`POST/products`
 - id가 {product_id}인 상품 정보를 수정하는 API (관리자용) : `PUT/products/123`
 
 ## 2. REST API 설계 평가
@@ -80,7 +80,7 @@ https://api.library.com/v2/libraries/1316754/books/978-0321127426/reviews?rating
 
 > tip: x-www-form-urlencoded 형식에서 배열(같은 키의 여러 데이터)를 표현할 때는, 동일한 키를 여러 번 반복해서 제공합니다.
 > 
-> ex: `array-val=1&array-val=2&array-val=3` >> `array-val [1,2,3]`
+> ex: `array-val=1&array-val=2&array-val=3` << `array-val [1,2,3]`
 
 - 장르: 액션, SF
 - 상영 시간(time): 90분(minimum) ~ 150분(maximum)
@@ -91,12 +91,14 @@ https://api.library.com/v2/libraries/1316754/books/978-0321127426/reviews?rating
 - 페이지(page): 3페이지, 페이지당 15개 항목
 ```
 https://api.movie.stream.service.com/v2/movie?
-genre[action,sci-fi]&
-time[90,150]&
+genre=action,sci-fi&
+time_min=90&
+time_max=150&
 year=2010&
-actor[Tom,scarlett]&
+actor=Tom,scarlett&
 review=7.5&
+page_size=15
 sort=popularity.desc&
 page=3&
-page_size=15
+
 ```

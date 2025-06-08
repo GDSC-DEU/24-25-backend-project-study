@@ -61,7 +61,7 @@ https://api.library.com/v2/libraries/1316754/books/978-0321127426/reviews?rating
 
 > tip: x-www-form-urlencoded 형식에서 배열(같은 키의 여러 데이터)를 표현할 때는, 동일한 키를 여러 번 반복해서 제공합니다.
 > 
-> ex: `array-val=1&array-val=2&array-val=3` >> `array-val [1,2,3]`
+> ex: `array-val=1&array-val=2&array-val=3` << `array-val [1,2,3]`
 
 - 장르: 액션, SF
 - 상영 시간: 90분 ~ 150분
